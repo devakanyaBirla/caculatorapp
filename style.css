@@ -1,0 +1,81 @@
+*{
+margin: 0;
+padding: 0;
+font-family:'Pippins',sans-serif ;
+box-sizing: border-box;
+}
+
+.container{
+height: 100vh;
+width: 100%;
+background: #e3f9ff;
+display: flex;
+align-items: center;
+justify-content: center;
+animation-name: caculator;
+animation-duration: 2s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes caculator{
+0%{
+left:0;
+}
+50%{
+left: 200px;
+background-color: rgb(29, 29, 32);
+}
+100%{
+left: 400px;
+background-color: #64e7cb;
+}
+}
+
+.caculator{
+background: #3a4452;
+padding: 20px;
+border-radius: 10px;
+}
+
+
+.caculator form input {
+border: 0;
+outline: 0;
+width: 60px;
+height: 60px;
+border-radius:10px;
+box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+background: transparent;
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+margin: 10px;
+}
+
+form .display{
+display: flex;
+justify-content: flex-end;
+margin: 20px 0;
+box-shadow: -8px -8px 15px rgba(255,255,255,0.1);
+border: 1px solid gray;
+
+}
+
+
+
+form .display Input{
+text-align: right;
+flex: 1;
+font-size: 45px;
+box-shadow: none;
+}
+
+.equal{
+width: 145px !important;
+}
+
+form input.Operator{
+color: #33ffd8;
+
+}
